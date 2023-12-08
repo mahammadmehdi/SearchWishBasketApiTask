@@ -1,0 +1,166 @@
+.basketpage {
+min-height: 100vh;
+position: relative;
+
+
+    .null{
+        text-align: center;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+      }
+    .page {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .cards {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 70%;
+            gap: 30px;
+            margin-top: 7%;
+            .basketTotalPrice{
+                color: darkgreen;
+                position: absolute;
+                right: 30px;
+                width: 300px;
+                background-color: lightgreen;
+                padding: 15px;
+                border: 2px solid darkgreen;
+                border-radius: 7px;
+            }
+
+            a {
+                color: black;
+            }
+
+            .card {
+                width: 355px;
+                min-height: 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 10px;
+                box-shadow: 0px 2px 4px 0px #0000000e;
+                &:hover .cardHover {
+                    opacity: 1;
+                    transform: translateY(-25px);
+                }
+    
+                .cardHover {
+                    top: 290px;
+                    left: 35px;
+                    background-color: #70cd139c;
+                    height: 50px;
+                    width: 280px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 50px;
+                    overflow: hidden;
+                    opacity: 0;
+                    transition: 300ms;
+                    position: absolute;
+                    cursor: pointer;
+    
+                    i {
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 50%;
+                        background-color: rgba(255, 255, 255, 0.897);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: 300ms;
+    
+                        &:hover {
+                            background-color: #70cd139c;
+                            color: white;
+                        }
+                    }
+                }
+    
+
+                .countButton {
+                    display: flex;
+                    gap: 20px;
+                    justify-content: center;
+                    align-items: baseline;
+
+                    .btn {
+                        padding: 10px;
+                        height: 35px;
+                        border: 2px solid darkgreen;
+                        background-color: lightgreen;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 7px;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: transparent;
+                        }
+                    }
+                    .removeBtn{
+                        padding: 10px;
+                        height: 35px;
+                        border: 2px solid darkgreen;
+                        background-color: lightgreen;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 7px;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: transparent;
+                        }
+                    }
+
+                }
+                .price{
+                 color: darkgreen;
+                }
+
+                .image {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 30px;
+
+                    img {
+                        width: 250px;
+                        height: 255px;
+
+                    }
+
+                    .hoverIcon {
+                        display: flex;
+                        justify-content: center;
+                        gap: 20px;
+                        width: 80%;
+                        height: 40px;
+
+                    }
+                }
+                .name{
+                    padding-top: 15px;
+                }
+
+                .cost {
+                    display: flex;
+                    gap: 30px;
+                    color: darkgreen;
+
+                    .discount {
+                        text-decoration: line-through;
+                    }
+                }
+
+            }
+        }
+    }
+}
